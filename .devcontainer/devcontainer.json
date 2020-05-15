@@ -1,0 +1,16 @@
+{
+    "name": "golang",
+    "dockerFile": "Dockerfile",
+    "appPort": [9000],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"        
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/go/src/github.com/nidhinnyc/go-learning,type=bind,consistency=delegated",
+    "workspaceFolder": "/go/src/github.com//nidhinnyc/go-learning",
+    "extensions": [
+        "ms-vscode.go",
+		"mhutchie.git-graph",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode"
+    ]
+}
